@@ -1,6 +1,6 @@
-# A Neural Framework for Learning Graph and Subgraph Similarity Measures
+# NeuroSED: Learning Subgraph Similarity via Graph Neural Networks
 
-This repository contains the reference implementation for the paper "A Neural Framework for Learning Graph and Subgraph Similarity Measures". `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
+This repository contains the official reference implementation for the paper "NeuroSED: Learning Subgraph Similarity via Graph Neural Networks". `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
 
 ## Data
 
