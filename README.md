@@ -1,14 +1,14 @@
-# NeuroSED: Learning Subgraph Similarity via Graph Neural Networks
+# GREED: A Neural Framework for Learning Graph Distance Functions
 
-This repository contains the official reference implementation for the paper "NeuroSED: Learning Subgraph Similarity via Graph Neural Networks". `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
+This repository contains the official reference implementation for the paper ["GREED: A Neural Framework for Learning Graph Distance Functions"](https://arxiv.org/abs/2112.13143) accepted at NeurIPS 2022. `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
 
 ## Data
 
-The data and pre-trained models can be downloaded from this [Google Drive link](https://drive.google.com/file/d/11cCqmr0WEqfSoxubxvbIP4APBGTAwHrf/view?usp=sharing). Please see the README contained therein for further details.
+The data and trained models can be downloaded from this [Google Drive link](https://drive.google.com/file/d/1bRf6isnbfIrDc7V8xStlwEFX1ZtIMBEB/view?usp=sharing). Please see the README contained therein for further details.
 
 ## Experiments
 
-The Jupyter notebooks for the experiments in the paper can be found at the sister repository [NeuroSED-Expts](https://github.com/rishabh-ranjan/NeuroSED-Expts).
+The Jupyter notebooks for the experiments in the paper can be found at the sister repository [greed-expts](https://github.com/rishabh-ranjan/greed-expts).
 
 ## Installation
 
@@ -35,5 +35,18 @@ We recommend using a `conda` environment for installation.
 
 ## Usage
 
-Check out the experiment notebooks for example usage. Scripts will be added soon. Meanwhile, it should be easy enough to adapt the code from the notebooks for training, testing, visualization, etc.
+Check out the experiment notebooks at [greed-expts](https://github.com/rishabh-ranjan/greed-expts) for example usage. The notebooks contain code for training, testing, visualization, etc.
+
+## Citation
+
+```
+@inproceedings{ranjan&al22,
+  author = {Ranjan, Rishabh and Grover, Siddharth and Medya, Sourav and Chakaravarthy, Venkatesan and Sabharwal, Yogish and Ranu, Sayan},
+  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {GREED: A Neural Framework for Learning Graph Distance Functions},
+  booktitle = {Advances in Neural Information Processing Systems 36: Annual Conference
+               on Neural Information Processing Systems 2022, NeurIPS 2022, November 29-Decemer 1, 2022},
+  year = {2022},
+}
+```
 
