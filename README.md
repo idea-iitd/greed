@@ -1,6 +1,6 @@
 # GREED: A Neural Framework for Learning Graph Distance Functions
 
-This repository contains the official reference implementation for the paper ["GREED: A Neural Framework for Learning Graph Distance Functions"](https://arxiv.org/abs/2112.13143) accepted at NeurIPS 2022. `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
+This repository contains the official reference implementation for the paper ["GREED: A Neural Framework for Learning Graph Distance Functions"](https://openreview.net/pdf?id=3LBxVcnsEkV) accepted at NeurIPS 2022. `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
 
 ## Data
 
