@@ -17,11 +17,11 @@ target_compile_options(pyged PUBLIC
 
 target_include_directories(pyged PUBLIC
 	${CMAKE_SOURCE_DIR}/ext/gedlib
-	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/boost.1.69.0
+	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/boost_1_82_0
 	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/eigen.3.3.4/Eigen
 	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/nomad.3.8.1/src
 	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/nomad.3.8.1/ext/sgtelib/src
-	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/lsape.5/cpp/include
+	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/lsape.5/include
 	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/libsvm.3.22
 	${CMAKE_SOURCE_DIR}/ext/gedlib/ext/fann.2.2.0/include
 	${CMAKE_SOURCE_DIR}/ext/gurobi911/linux64/include

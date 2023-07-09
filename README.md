@@ -20,11 +20,37 @@ We recommend using a `conda` environment for installation.
 
 	2.1. Install [GEDLIB](https://dbblumenthal.github.io/gedlib/) at `pyged/ext/gedlib` as a header-only library (see Section 4.1 in the docs).
 
-	2.2. Install [Gurobi 9.1.1](https://support.gurobi.com/hc/en-us/articles/360054352391-Gurobi-9-1-1-released) at `pyged/ext/gurobi911`. Later versions can be used with suitable naming changes. _Gurobi_ requires a licence. Free academic licenses are available. _Gurobi_ is required for ground truth SED computation. Alternatively, one could use one of the non-MIP methods available in _GEDLIB_ or use the generated data provided by us. To build without _Gurobi_, uncomment `#define GUROBI` in `pyged/src/pyged.cpp`.
+    Detailed steps are as follows:
+
+    ```bash
+    mkdir pyged/ext
+    cd pyged/ext
+    git clone --branch v1.0 --depth 1 https://github.com/dbblumenthal/gedlib
+    cd gedlib
+    python install.py
+    cd ext
+    wget https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz
+    tar -xzf boost_1_82_0.tar.gz
+    ```
+
+	2.2. Install [Gurobi 9.1.1](https://support.gurobi.com/hc/en-us/articles/360054352391-Gurobi-9-1-1-released) at `pyged/ext/gurobi911`. Later versions can be used with suitable naming changes. _Gurobi_ requires a licence. Free academic licenses are available. _Gurobi_ is required for ground truth SED computation. Alternatively, one could use one of the non-MIP methods available in _GEDLIB_ or use the generated data provided by us. To build without _Gurobi_, comment out `#define GUROBI` in `pyged/src/pyged.cpp`.
+
+    Detailed steps are as follows:
+
+    ```bash
+    cd pyged/ext
+    wget https://packages.gurobi.com/9.1/gurobi9.1.1_linux64.tar.gz
+    tar -xzf gurobi9.1.1_linux64.tar.gz
+    ```
 
 	2.3. Install [PyBind11](https://pybind11.readthedocs.io/en/stable/installing.html#include-with-conda-forge).
 
-	2.4. Build _pyged_:
+    Example step:
+    ```bash
+    conda install -c conda-forge pybind11
+    ```
+
+	2.4. Build _pyged_ (you can install `cmake` with `conda` if it's not available):
 	```
 	mkdir pyged/build
 	cd pyged/build
