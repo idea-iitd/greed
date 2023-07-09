@@ -37,6 +37,10 @@ We recommend using a `conda` environment for installation.
 
 Check out the experiment notebooks at [greed-expts](https://github.com/rishabh-ranjan/greed-expts) for example usage. The notebooks contain code for training, testing, visualization, etc.
 
+## Contact
+
+If you face any difficulties in using this repo feel free to raise a GitHub issue (recommended) or reach out via email at rishabhranjan0207@gmail.com. I am unable to respond to queries sent to rishabh.ranjan.cs118@cse.iitd.ac.in in a timely manner.
+
 ## Citation
 
 ```
