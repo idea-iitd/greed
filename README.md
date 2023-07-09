@@ -51,7 +51,7 @@ We recommend using a `conda` environment for installation.
     ```
 
 	2.4. Build _pyged_ (you can install `cmake` with `conda` if it's not available):
-	```
+	```bash
 	mkdir pyged/build
 	cd pyged/build
 	cmake ..
@@ -69,7 +69,7 @@ If you face any difficulties in using this repo feel free to raise a GitHub issu
 
 ## Citation
 
-```
+```bibtex
 @inproceedings{ranjan&al22,
   author = {Ranjan, Rishabh and Grover, Siddharth and Medya, Sourav and Chakaravarthy, Venkatesan and Sabharwal, Yogish and Ranu, Sayan},
   keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
