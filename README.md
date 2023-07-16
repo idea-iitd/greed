@@ -19,7 +19,7 @@ The Jupyter notebooks for the experiments in the paper can be found at the siste
 
 We recommend using a `conda` environment for installation.
 
-1. Install _Python_, _Jupyter_, _PyTorch_ and _PyTorch Geometric_. The code has been tested to work with _Python 3.6.13_, _PyTorch 1.8.0_ and _PyTorch Geometric 1.6.3_, but later versions are also expected to run smoothly.
+1. Install _Python_, _Jupyter_, _PyTorch_ and _PyTorch Geometric_ (also `networkx` and `matplotlib`). The code has been tested to work with _Python 3.6.13_, _PyTorch 1.8.0_ and _PyTorch Geometric 1.6.3_, but later versions are also expected to run smoothly.
 
 2. Install _pyged_:
 
@@ -46,6 +46,8 @@ We recommend using a `conda` environment for installation.
     cd pyged/ext
     wget https://packages.gurobi.com/9.1/gurobi9.1.1_linux64.tar.gz
     tar -xzf gurobi9.1.1_linux64.tar.gz
+    cd gurobi911/linux64/src/build
+    make
     ```
 
 	2.3. Install [PyBind11](https://pybind11.readthedocs.io/en/stable/installing.html#include-with-conda-forge).
