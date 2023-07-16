@@ -2,9 +2,14 @@
 
 This repository contains the official reference implementation for the paper ["GREED: A Neural Framework for Learning Graph Distance Functions"](https://openreview.net/pdf?id=3LBxVcnsEkV) accepted at NeurIPS 2022. `neuro` contains our implementation of the neural models presented in the paper along with supporting code for experiments. `pyged` contains our python wrapper over [GEDLIB](https://github.com/dbblumenthal/gedlib), which can be used to compute SED/GED values and graph alignments using non-neural techniques.
 
-## Data
+## Data and Model Weights
 
 The data and trained models can be downloaded from this [Google Drive link](https://drive.google.com/file/d/1bRf6isnbfIrDc7V8xStlwEFX1ZtIMBEB/view?usp=sharing). Please see the README contained therein for further details.
+
+If you have `gdown` installed (`pip install gdown` or `conda install -c conda-forge gdown`), you can download on terminal with:
+```bash
+gdown 1bRf6isnbfIrDc7V8xStlwEFX1ZtIMBEB
+```
 
 ## Experiments
 
