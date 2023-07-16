@@ -5,6 +5,8 @@ project(pyged)
 find_package(pybind11)
 pybind11_add_module(pyged src/pyged.cpp)
 
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+
 add_custom_command(TARGET pyged POST_BUILD
 	COMMAND ${CMAKE_COMMAND} -E copy
 		${CMAKE_SOURCE_DIR}/build/pyged.*.so
